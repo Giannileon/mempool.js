@@ -4,8 +4,11 @@ const init = async () => {
   try {
     const { bitcoin: { addresses } } = mempoolJS();
     
-    const address = '1wizSAYSbuyXbt9d8JV8ytm5acqq2TorC';
-    
+    const address = 'bc1qgdjqv0av3q56jvd82tkdjpy7gdp9ut8tlqmgrpmv24sq90ecnvqqjwvw97" 
+                     "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2" 
+                      "bc1qazcm763858nkj2dj986etajv6wquslv8uxwczt"
+                        "3M219KR5vEneNb47ewrPfWyb5jQ2DjxRP6"
+  
     const myAddress = await addresses.getAddress({ address });
     console.log(myAddress);
     
